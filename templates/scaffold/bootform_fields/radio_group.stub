@@ -5,6 +5,6 @@ $radios = [
 $RADIO_BUTTONS$
 ];
 ?>
-    {!! BootForm::radios('$FIELD_NAME$', '$FIELD_NAME_TITLE$:', $radios) !!}
+    {!! BootForm::radios('$FIELD_NAME$', ['html' => '$FIELD_NAME_TITLE$:'], $radios) !!}
 
 </div>
