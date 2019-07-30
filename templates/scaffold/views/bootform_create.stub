@@ -12,11 +12,11 @@
 
             <div class="box-body">
                 <div class="row">
-                    {!! BootForm::open(['route' => '$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.store']) !!}
+                    {!! KBForm::open(['route' => '$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.store']) !!}
 
                         @include('$VIEW_PREFIX$$MODEL_NAME_PLURAL_SNAKE$.fields')
 
-                    {!! BootForm::close() !!}
+                    {!! KBForm::close() !!}
                 </div>
             </div>
         </div>

@@ -1,4 +1,4 @@
 <!-- $FIELD_NAME_TITLE$ Field -->
 <div class="form-group col-sm-6">
-    {!! BootForm::email('$FIELD_NAME$',  ['html' => '$FIELD_NAME_TITLE$:'], null, ['class' => 'form-control']) !!}
+    {!! KBForm::email('$FIELD_NAME$',  ['html' => '$FIELD_NAME_TITLE$:'], null, ['class' => 'form-control']) !!}
 </div>
