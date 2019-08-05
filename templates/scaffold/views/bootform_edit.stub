@@ -10,11 +10,11 @@
         @include('adminlte-templates::common.errors')
         <div class="box box-primary">
             <div class="box-body">
-                <div class="row">
-                    {!! KBForm::open(['model' => $$MODEL_NAME_CAMEL$, 'store' => '$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.store', 'update' => '$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.update', 'method' => 'patch']) !!}
+                {!! KBForm::open(['model' => $$MODEL_NAME_CAMEL$, 'store' => '$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.store', 'update' => '$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.update', 'method' => 'patch']) !!}
+                    <div class="row">
                         @include('$VIEW_PREFIX$$MODEL_NAME_PLURAL_SNAKE$.fields')
-                    {!! Form::close() !!}
-                </div>
+                    </div>
+                {!! Form::close() !!}
             </div>
         </div>
     </div>
