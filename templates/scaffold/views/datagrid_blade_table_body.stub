@@ -19,5 +19,5 @@ $grid
         }
     ]);
 
-    echo $grid->show();
+    echo $grid->show('f');
 ?>
